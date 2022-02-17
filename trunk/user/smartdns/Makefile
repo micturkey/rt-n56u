@@ -23,5 +23,5 @@ clean:
 	rm -f config_done
 
 romfs:
+	cp $(THISDIR)/$(SRC_NAME)/src/smartdns /opt/images/smartdns
 	$(ROMFSINST) -p +x $(THISDIR)/$(SRC_NAME)/src/smartdns /usr/bin/smartdns
-	copy $(THISDIR)/$(SRC_NAME)/src/smartdns /opt/images/smartdns
